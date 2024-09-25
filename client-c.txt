@@ -1,4 +1,13 @@
 # Client Task C #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
+Start
+    //Set variables
+    Set number of items in package to start at 0
+    Set total number of items <= 50
 
+    While items <= 50
+        print "package contains:", items
+        Increment items by 2
+    End While
+End
