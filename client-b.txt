@@ -1,4 +1,35 @@
 # Client Task B #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
+Start
+    //Set variables
+    Set grid max 30/30
+    //Starting location of customer
+    Set current_loc to (0,0)
+    //Target location
+    Set target_loc to (x,y)
 
+    //Set a loop for customer to find target_loc
+    While current_loc != target_loc do
+        print "Your current location is", current_loc
+        print "Move North, South, East, or West"
+        input direction
+
+        IF direction is "North" THEN
+            Set current_loc(y) to current_loc(y) + 1
+        ELSE IF direction is "South" THEN
+            Set current_loc(y) to current_loc(y) - 1
+        ELSE IF direction is "East" THEN
+            Set current_loc(x) to current_loc(x) + 1
+        ELSE IF direction is "West" THEN
+            Set current_loc(x) to current_loc(x) - 1
+        ELSE
+            print "Not here. Try looking somewhere else."
+        
+    //Check to see if the target_loc has been reached
+    IF current_loc == target_loc THEN
+        print "Ah! There it is!"
+    ELSE
+        print "Not here. Try looking somewhere else."
+
+End
