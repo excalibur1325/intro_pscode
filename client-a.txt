@@ -1,4 +1,34 @@
 # Client Task A #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
+// Set Variables
+Set int range 1 to 10
+Generate random_num to a number between 1 and 10
+Set chances to 3
+Set guess_num to FALSE
+
+//Start guessing game
+While chances > 0 AND guess_num is FALSE do
+    print "Guess a number between 1 and 10."
+    input guess_num
+
+    // Checking if the guess is correct
+    IF guess_num == random_num THEN
+        print "Woohoo! You're a genious!"
+        Set guess_num to TRUE
+    ELSE
+        Set chances to (chances - 1) 
+        IF chances > 0 THEN
+            IF guess_num > random_num THEN
+                print "Oops! Too high. Try again."
+            ELSE
+                print "Oops! A bit too low... Try again."
+        ELSE
+            print "Darn... you're out of chances. The correct answer was" random_num
+
+//The Endgame
+IF guess_num is TRUE THEN
+    print "Nicely done!"
+ELSE
+    print "Better luck next time champ."
 
